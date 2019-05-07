@@ -1,5 +1,8 @@
 
+//document.getElementById("page-load").onload = function() {dankMode() };
+
 function dankMode() {
+
     document.body.style.backgroundColor="black";            // Set background
 
     myTag=document.getElementsByClassName('my-color');      // Get all items for one color
@@ -24,3 +27,5 @@ function dankMode() {
         for(i=0; i<  myTag2.length; i++ )
         myTag2[i].style.color="#000";
   }
+
+

@@ -42,29 +42,63 @@
 
     <!-- Photo Grid -->
     <div class="w3-row w3-animate-bottom">
-
-      <img src="front_images/image-0.JPG">
-      <img src="front_images/image-1.JPG">
-      <img src="front_images/image-2.JPG">
-      <img src="front_images/image-3.JPG">
-      <img src="front_images/image-4.JPG">
-      <img src="front_images/image-5.JPG">
-      <img src="front_images/image-6.JPG">
-      <div class="w3-half">
-        <img class="half-image-left" src="front_images/image-7.JPG" style="width:98%; margin-bottom: 3vw;">
+      <div class="image-wrapper">
+        <img class="photo" src="front_images/image-0.JPG">
       </div>
-      <div class="w3-half">
-        <img class="half-image-right" src="front_images/image-7-2.jpg" style="width:98%; margin-bottom: 3vw;">
+      <div class="image-wrapper">
+        <img class="photo" src="front_images/image-1.JPG">
       </div>
-      <img src="front_images/image-8.JPG">
-      <img src="front_images/image-9.JPG">
-      <img src="front_images/image-10.JPG">
-      <img src="front_images/image-11.JPG">
-      <img src="front_images/image-12.JPG">
-      <img src="front_images/image-13.JPG">
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-2.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-3.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-4.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-5.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-6.JPG">
+      </div>
+      <div class="image-wrapper w3-half">
+        <img class="photo half-image-left" data-src="front_images/image-7.JPG" style="width:98%; margin-bottom: 3vw;">
+      </div>
+      <div class="image-wrapper w3-half">
+        <img class="photo half-image-right" data-src="front_images/image-7-2.jpg" style="width:98%; margin-bottom: 3vw;">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-8.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-9.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-10.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-11.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-12.JPG">
+      </div>
+      <div class="image-wrapper">
+        <img class="photo" data-src="front_images/image-13.JPG">
+      </div>
 
     </div>
   </div> <!-- End Page Content -->
+
+
+  <!-- Lazy load from: https://github.com/verlok/lazyload -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script> 
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".photo"
+});
+    </script>
 
   <!-- Footer / About Section -->
   <footer class="w3-container w3-padding-32 w3-center my-color w3-xlarge" id="about">
@@ -110,6 +144,7 @@
           target="blank" href="https://github.com/ChrisDangCode/web_examples"></a>
 
       </div>
+      
 
       <div class="opp-my-color">
         <a href="#" class="w3-center w3-button w3-round-large w3-xlarge w3-margin w3-border">Return to Top</a>

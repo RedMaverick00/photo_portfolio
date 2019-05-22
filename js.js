@@ -1,6 +1,9 @@
 
 //document.getElementById("page-load").onload = function() {dankMode() };
 
+
+
+
 function dankMode() {
 
     document.body.style.backgroundColor="black";            // Set background

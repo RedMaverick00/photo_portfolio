@@ -10,71 +10,105 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="../js.js"></script>
 <style>
+  body {
+    font-family: "Raleway", Arial, sans-serif
+  }
 
-body {font-family: "Raleway", Arial, sans-serif}
-.w3-row img {margin-bottom: -8px}
+  .w3-row img class="photo" {
+    margin-bottom: -8px
+  }
 </style>
+
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:95%">
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:95%">
 
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-button opp-my-color w3-round-large w3-border">Chris Dang - Weddings</a>
-    <a href="#about" class="fa fa-2x fa-arrow-circle-down w3-right w3-button opp-my-color w3-round-large"></a>
-  </header>
+    <!-- Header -->
+    <header class="w3-container w3-xlarge w3-padding-24">
+      <a href="#" class="w3-left w3-button opp-my-color w3-round-large w3-border">Chris Dang - Weddings</a>
+      <a href="#about" class="fa fa-2x fa-arrow-circle-down w3-right w3-button opp-my-color w3-round-large"></a>
+    </header>
 
-  <!-- Photo Grid -->
-  <div class="w3-row">
+    <!-- Photo Grid -->
+    <div class="w3-row">
+      <div>
+        <img class="photo" src="weddings_images/image-0.JPG" style="width:100%; margin-bottom: 3vw; ">
+      </div>
+      <div>
+        <img class="photo" src="weddings_images/image-1.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
+      <div class="w3-half">
+        <img class="photo" src="weddings_images/image-2.JPG" style="width:98%; margin-bottom: 3vw;">
+      </div>
+      <div class="w3-half">
+        <img class="photo" src="weddings_images/image-2-2.JPG" style="width:98%; margin-bottom: 3vw; float:right;">
+      </div>
+      <div>
+        <img class="photo" data-src="weddings_images/image-3.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
+      <div>
+        <img class="photo" data-src="weddings_images/image-4.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
+      <div>
+        <img class="photo" data-src="weddings_images/image-5.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
+      <div>
+        <img class="photo" data-src="weddings_images/image-6.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
+      <div>
+        <img class="photo" data-src="weddings_images/image-7.JPG" style="width:100%; margin-bottom: 3vw;">
+      </div>
 
-      <img  src="weddings_images/image-0.JPG" style="width:100%; margin-bottom: 3vw; ">
-      <img  src="weddings_images/image-1.JPG" style="width:100%; margin-bottom: 3vw;">
-	  	  <div class="w3-half">
-	  <img   src="weddings_images/image-2.JPG"  style="width:98%; margin-bottom: 3vw;">
-	  </div>
-	  <div class="w3-half">
-	  <img   src="weddings_images/image-2-2.JPG"  style="width:98%; margin-bottom: 3vw; float:right;">
-	  </div>
-      <img  src="weddings_images/image-3.JPG" style="width:100%; margin-bottom: 3vw;">
-      <img  src="weddings_images/image-4.JPG" style="width:100%; margin-bottom: 3vw;">
-	  <img  src="weddings_images/image-5.JPG" style="width:100%; margin-bottom: 3vw;">
-	  <img  src="weddings_images/image-6.JPG" style="width:100%; margin-bottom: 3vw;">
-	  <img  src="weddings_images/image-7.jpg" style="width:100%; margin-bottom: 3vw;">
+
+    </div>
 
 
+
+    <!-- End Page Content -->
   </div>
-  
-<!-- End Page Content -->
-</div>
+      <!-- Lazy load from: https://github.com/verlok/lazyload -->
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+      <script>
+        var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".photo"
+        });
+      </script>
 
-<!-- Footer / About Section -->
-<footer class="w3-container w3-padding-32 w3-center my-color w3-xlarge" id="about" >
-
-  
-  <!-- Links -->
-  <div class="opp-my-color w3-margin-bottom">
-  <a class="fa fa-2x fa-facebook-official w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank" href="https://www.facebook.com/pg/cdangproduction/"></a>
-  <a class="fa fa-2x fa-instagram w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank" href="https://www.instagram.com/cdangproduction/"></a>
-  <a class="fa fa-2x fa-twitter w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank"  href="https://twitter.com/CDangProduction" ></a>
-  <a class="fa fa-2x fa-linkedin w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank"  href="https://www.linkedin.com/in/chris-dang-code-and-photo"></a>
-
-</div>
-<a href="#" class="fa fa-2x fa-arrow-circle-up w3-center w3-button w3-round-large opp-my-color"></a>
-<a href="../index.html" class="fa fa-2x fa-home w3-center w3-button w3-flat-silver w3-round-large opp-my-color"></a>
-  
+  <!-- Footer / About Section -->
+  <footer class="w3-container w3-padding-32 w3-center my-color w3-xlarge" id="about">
 
 
-  <div class="">
-  <button onclick="dankMode()" class="opp-my-color w3-center w3-button w3-black w3-round-large w3-xlarge w3-margin">Dark Theme</button>
-  <button onclick="lightMode()" class="opp-my-color w3-center w3-button w3-white w3-round-large w3-xlarge ">Light Theme</button>
-  </div>
+    <!-- Links -->
+    <div class="opp-my-color w3-margin-bottom">
+      <a class="fa fa-2x fa-facebook-official w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;"
+        target="blank" href="https://www.facebook.com/pg/cdangproduction/"></a>
+      <a class="fa fa-2x fa-instagram w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank"
+        href="https://www.instagram.com/cdangproduction/"></a>
+      <a class="fa fa-2x fa-twitter w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank"
+        href="https://twitter.com/CDangProduction"></a>
+      <a class="fa fa-2x fa-linkedin w3-hover-opacity" style="text-decoration: none; margin: 0 0.25%;" target="blank"
+        href="https://www.linkedin.com/in/chris-dang-code-and-photo"></a>
 
-  <!--
+    </div>
+    <a href="#" class="fa fa-2x fa-arrow-circle-up w3-center w3-button w3-round-large opp-my-color"></a>
+    <a href="../index.html" class="fa fa-2x fa-home w3-center w3-button w3-flat-silver w3-round-large opp-my-color"></a>
+
+
+
+    <div class="">
+      <button onclick="dankMode()"
+        class="opp-my-color w3-center w3-button w3-black w3-round-large w3-xlarge w3-margin">Dark Theme</button>
+      <button onclick="lightMode()" class="opp-my-color w3-center w3-button w3-white w3-round-large w3-xlarge ">Light
+        Theme</button>
+    </div>
+
+    <!--
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-</footer>
+  </footer>
 
- 
- 
+
+
 </body>
+
 </html>

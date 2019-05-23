@@ -1,0 +1,82 @@
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/* End Scroll bar */
+
+
+
+a {text-decoration: none}
+img {
+    max-width:100%;;
+    /* width:100%; */
+    margin-bottom: 1.5vw !important; 
+}
+
+
+.half-image-right{
+    width:98%;
+}
+
+.half-image-right{
+    float:right;
+    width:98%
+}
+
+
+/* Ultrawide monitors */
+@media (min-aspect-ratio: 17/9){
+    img {
+
+        max-width: 55%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .half-image-right{
+         float:left;
+     }
+     .half-image-left{
+         float:right;
+     }
+
+}
+
+
+/* Normal 16x9 */
+@media (aspect-ratio: 16/9){
+
+    img{
+        width:85%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+
+
+/* Mobile */
+@media (aspect-ratio: 9/16){
+
+
+}
